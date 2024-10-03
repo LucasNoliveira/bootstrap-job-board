@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board Elegante</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Job Board</a>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Vagas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="jumbotron jumbotron-fluid text-white bg-dark text-center mb-5 mt-5">
+        <div class="container">
+            <h1 class="display-4">Encontre o trabalho dos seus sonhos</h1>
+            <p class="lead">Conectamos você às melhores oportunidades de trabalho</p>
+        </div>
+    </header>
+
+    <section class="container mb-5">
+        <div class="row">
+            <div class="col-md-12">
+                <form id="job-filter">
+                    <div class="form-row d-flex justify-content-center align-items-center">
+                        <div class="col-md-3 mb-3">
+                            <label for="location">Localização</label>
+                            <input type="text" class="form-control" id="location" placeholder="Digite a cidade">
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="category">Categoria</label>
+                            <select class="form-control" id="category">
+                                <option value="">Todas as Categorias</option>
+                                <option value="tech">Tecnologia</option>
+                                <option value="design">Design</option>
+                                <option value="marketing">Marketing</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="contract">Tipo de Contrato</label>
+                            <select class="form-control" id="contract">
+                                <option value="">Todos</option>
+                                <option value="full-time">Tempo Integral</option>
+                                <option value="part-time">Meio Período</option>
+                                <option value="freelance">Freelancer</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-primary btn-block" id="search-jobs">Buscar Vagas</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row" id="job-list">
+            <!-- As vagas serão inseridas dinamicamente aqui -->
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4 fixed-bottom">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Job Board. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

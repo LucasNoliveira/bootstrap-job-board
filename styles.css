@@ -1,0 +1,28 @@
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item.active{
+    color: yellow;
+    font-weight: bold;
+}
+
+.jumbotron {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#search-jobs {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+#search-jobs:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+footer {
+    background-color: #222;
+}
