@@ -4,8 +4,8 @@ body{
     font-family: "Montserrat", sans-serif;
 }
 
-.nav-item.active{
-    color: yellow;
+.navbar-nav .nav-item.active .nav-link {
+    color: blue !important;
     font-weight: bold;
 }
 
@@ -16,7 +16,7 @@ body{
 }
 
 #search-jobs {
-    background-color: #28a745;
+    /* background-color: #28a745; */
     border-color: #28a745;
 }
 
