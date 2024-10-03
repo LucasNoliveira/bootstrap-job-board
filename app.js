@@ -2,8 +2,21 @@ $(document).ready(function () {
     const jobs = [
         { title: 'Desenvolvedor Front-End', location: 'São Paulo', category: 'tech', contract: 'full-time' },
         { title: 'Designer UX/UI', location: 'Rio de Janeiro', category: 'design', contract: 'freelance' },
-        { title: 'Especialista em SEO', location: 'Curitiba', category: 'marketing', contract: 'part-time' }
+        { title: 'Especialista em SEO', location: 'Curitiba', category: 'marketing', contract: 'part-time' },
+        { title: 'Gerente de Projetos', location: 'Belo Horizonte', category: 'management', contract: 'full-time' },
+        { title: 'Analista de Dados', location: 'Porto Alegre', category: 'tech', contract: 'contract' },
+        { title: 'Copywriter', location: 'São Paulo', category: 'marketing', contract: 'remote' },
+        { title: 'Desenvolvedor Mobile', location: 'Florianópolis', category: 'tech', contract: 'full-time' },
+        { title: 'Gerente de Marketing', location: 'Salvador', category: 'marketing', contract: 'part-time' },
+        { title: 'Fotógrafo', location: 'Recife', category: 'creative', contract: 'freelance' },
+        { title: 'Analista de Qualidade', location: 'Fortaleza', category: 'tech', contract: 'full-time' },
+        { title: 'Engenheiro de Software', location: 'Brasília', category: 'tech', contract: 'full-time' },
+        { title: 'Desenvolvedor Back-End', location: 'Belo Horizonte', category: 'tech', contract: 'full-time' },
+        { title: 'Assistente Administrativo', location: 'São Paulo', category: 'administration', contract: 'part-time' },
+        { title: 'Consultor de Vendas', location: 'Curitiba', category: 'sales', contract: 'remote' },
+        { title: 'Analista de Recursos Humanos', location: 'Rio de Janeiro', category: 'management', contract: 'full-time' }
     ];
+    
 
     function displayJobs(filteredJobs) {
         $('#job-list').empty();

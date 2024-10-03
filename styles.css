@@ -1,5 +1,7 @@
-.navbar {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Montserrat", sans-serif;
 }
 
 .nav-item.active{
@@ -21,6 +23,11 @@
 #search-jobs:hover {
     background-color: #218838;
     border-color: #1e7e34;
+}
+
+.card-title:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 footer {
