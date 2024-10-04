@@ -1,21 +1,30 @@
 $(document).ready(function () {
     const jobs = [
-        { title: 'Desenvolvedor Front-End', location: 'São Paulo', category: 'tech', contract: 'full-time', salary: 'R$ 8.000', company: 'Tech Solutions', logo: 'url_da_logo_1.png' },
-        { title: 'Designer UX/UI', location: 'Rio de Janeiro', category: 'design', contract: 'freelance', salary: 'R$ 5.500', company: 'Design Co.', logo: 'url_da_logo_2.png' },
-        { title: 'Especialista em SEO', location: 'Curitiba', category: 'marketing', contract: 'part-time', salary: 'R$ 4.000', company: 'Marketing Pros', logo: 'url_da_logo_3.png' },
-        { title: 'Gerente de Projetos', location: 'Belo Horizonte', category: 'management', contract: 'full-time', salary: 'R$ 12.000', company: 'Project Leaders', logo: 'url_da_logo_4.png' },
-        { title: 'Analista de Dados', location: 'Porto Alegre', category: 'tech', contract: 'contract', salary: 'R$ 7.500', company: 'Data Insights', logo: 'url_da_logo_5.png' },
-        { title: 'Copywriter', location: 'São Paulo', category: 'marketing', contract: 'remote', salary: 'R$ 4.500', company: 'Content Creators', logo: 'url_da_logo_6.png' },
-        { title: 'Desenvolvedor Mobile', location: 'Florianópolis', category: 'tech', contract: 'full-time', salary: 'R$ 9.000', company: 'Mobile Apps', logo: 'url_da_logo_7.png' },
-        { title: 'Gerente de Marketing', location: 'Salvador', category: 'marketing', contract: 'part-time', salary: 'R$ 6.000', company: 'Marketing Masters', logo: 'url_da_logo_8.png' },
-        { title: 'Fotógrafo', location: 'Recife', category: 'creative', contract: 'freelance', salary: 'R$ 3.000', company: 'Photo Art', logo: 'url_da_logo_9.png' },
-        { title: 'Analista de Qualidade', location: 'Fortaleza', category: 'tech', contract: 'full-time', salary: 'R$ 6.500', company: 'Quality Check', logo: 'url_da_logo_10.png' },
-        { title: 'Engenheiro de Software', location: 'Brasília', category: 'tech', contract: 'full-time', salary: 'R$ 10.000', company: 'Software Inc.', logo: 'url_da_logo_11.png' },
-        { title: 'Desenvolvedor Back-End', location: 'Belo Horizonte', category: 'tech', contract: 'full-time', salary: 'R$ 8.500', company: 'Backend Builders', logo: 'url_da_logo_12.png' },
-        { title: 'Assistente Administrativo', location: 'São Paulo', category: 'administration', contract: 'part-time', salary: 'R$ 3.500', company: 'Admin Help', logo: 'url_da_logo_13.png' },
-        { title: 'Consultor de Vendas', location: 'Curitiba', category: 'sales', contract: 'remote', salary: 'R$ 4.200', company: 'Sales Pros', logo: 'url_da_logo_14.png' },
-        { title: 'Analista de Recursos Humanos', location: 'Rio de Janeiro', category: 'management', contract: 'full-time', salary: 'R$ 6.000', company: 'HR Team', logo: 'url_da_logo_15.png' }
+        { title: 'Desenvolvedor Front-End', location: 'São Paulo', category: 'tech', contract: 'full-time', salary: 'R$ 8.000', company: 'Tech Solutions', logo: 'url_da_logo_1.png', postedDate: '2024-09-10' },
+        { title: 'Designer UX/UI', location: 'Rio de Janeiro', category: 'design', contract: 'freelance', salary: 'R$ 5.500', company: 'Design Co.', logo: 'url_da_logo_2.png', postedDate: '2024-09-12' },
+        { title: 'Especialista em SEO', location: 'Curitiba', category: 'marketing', contract: 'part-time', salary: 'R$ 4.000', company: 'Marketing Pros', logo: 'url_da_logo_3.png', postedDate: '2024-09-15' },
+        { title: 'Gerente de Projetos', location: 'Belo Horizonte', category: 'management', contract: 'full-time', salary: 'R$ 12.000', company: 'Project Leaders', logo: 'url_da_logo_4.png', postedDate: '2024-09-20' },
+        { title: 'Analista de Dados', location: 'Porto Alegre', category: 'tech', contract: 'contract', salary: 'R$ 7.500', company: 'Data Insights', logo: 'url_da_logo_5.png', postedDate: '2024-09-25' },
+        { title: 'Copywriter', location: 'São Paulo', category: 'marketing', contract: 'remote', salary: 'R$ 4.500', company: 'Content Creators', logo: 'url_da_logo_6.png', postedDate: '2024-09-28' },
+        { title: 'Desenvolvedor Mobile', location: 'Florianópolis', category: 'tech', contract: 'full-time', salary: 'R$ 9.000', company: 'Mobile Apps', logo: 'url_da_logo_7.png', postedDate: '2024-09-30' },
+        { title: 'Gerente de Marketing', location: 'Salvador', category: 'marketing', contract: 'part-time', salary: 'R$ 6.000', company: 'Marketing Masters', logo: 'url_da_logo_8.png', postedDate: '2024-09-28' },
+        { title: 'Fotógrafo', location: 'Recife', category: 'creative', contract: 'freelance', salary: 'R$ 3.000', company: 'Photo Art', logo: 'url_da_logo_9.png', postedDate: '2024-09-29' },
+        { title: 'Analista de Qualidade', location: 'Fortaleza', category: 'tech', contract: 'full-time', salary: 'R$ 6.500', company: 'Quality Check', logo: 'url_da_logo_10.png', postedDate: '2024-09-27' },
+        { title: 'Engenheiro de Software', location: 'Brasília', category: 'tech', contract: 'full-time', salary: 'R$ 10.000', company: 'Software Inc.', logo: 'url_da_logo_11.png', postedDate: '2024-09-20' },
+        { title: 'Desenvolvedor Back-End', location: 'Belo Horizonte', category: 'tech', contract: 'full-time', salary: 'R$ 8.500', company: 'Backend Builders', logo: 'url_da_logo_12.png', postedDate: '2024-09-22' },
+        { title: 'Assistente Administrativo', location: 'São Paulo', category: 'administration', contract: 'part-time', salary: 'R$ 3.500', company: 'Admin Help', logo: 'url_da_logo_13.png', postedDate: '2024-09-15' },
+        { title: 'Consultor de Vendas', location: 'Curitiba', category: 'sales', contract: 'remote', salary: 'R$ 4.200', company: 'Sales Pros', logo: 'url_da_logo_14.png', postedDate: '2024-09-12' },
+        { title: 'Analista de Recursos Humanos', location: 'Rio de Janeiro', category: 'management', contract: 'full-time', salary: 'R$ 6.000', company: 'HR Team', logo: 'url_da_logo_15.png', postedDate: '2024-09-18' }
     ];
+
+    // Função para calcular diferença de dias
+    function calcularDias(postedDate) {
+        const hoje = new Date();
+        const dataPostagem = new Date(postedDate);
+        const diferencaEmMilissegundos = hoje - dataPostagem;
+        const dias = Math.floor(diferencaEmMilissegundos / (1000 * 60 * 60 * 24));
+        return dias === 0 ? 'Postado hoje' : `Postado há ${dias} dias`;
+    }
 
     function displaySkeleton() {
         $('#job-list').empty();
@@ -50,11 +59,12 @@ $(document).ready(function () {
                                     <span class="fw-bold">${job.company}</span>
                                 </div>
                                 <h5 class="card-title">${job.title}</h5>
-                                <div class="d-flex">
-                                <p class="card-text">${job.location} - </p>
-                                <p class="card-text">${job.contract}</p>
+                                <div class="d-flex mb-2">
+                                    <p class="card-text me-2">${job.location} -</p>
+                                    <p class="card-text">${job.contract}</p>
                                 </div>
-                                <p class="card-text text-success fw-bold">${job.salary}</p> <!-- Adiciona o salário -->
+                                <p class="card-text text-success fw-bold">${job.salary}</p>
+                                <p class="card-text text-muted"><small>${calcularDias(job.postedDate)}</small></p> <!-- Mostra a diferença de dias -->
                                 <div class="mt-auto d-flex">
                                     <button class="btn btn-primary w-50 me-1 mr-2">Candidatar-se</button>
                                     <button class="btn border-1 rounded btn-outline-secondary w-auto" title="Bookmark">
@@ -68,7 +78,7 @@ $(document).ready(function () {
             });
         }
     }
-    
+
     $('#search-jobs').click(function () {
         const location = $('#location').val().toLowerCase();
         const category = $('#category').val();
